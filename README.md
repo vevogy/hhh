@@ -1221,16 +1221,3 @@ SaveManager:LoadAutoloadConfig()
     
 getgenv().MinSelectedFlowPercentage = Options.MinFlowPercentageSlider.Value
 getgenv().MaxSelectedFlowPercentage = Options.MaxFlowPercentageSlider.Value
-
-task.spawn(function()
-Toggles.HeightSpinToggle:SetValue(true)
-getgenv().HeightSpin = true
-end)
-task.spawn(function()
-Toggles.FirstWeaponAutoSpinToggle:SetValue(true)
-getgenv().FirstWeaponSpin = true
-end)
-task.spawn(function()
-Toggles.SecondWeaponAutoSpinToggle:SetValue(true)
-getgenv().SecondWeaponSpin = true
-end)
